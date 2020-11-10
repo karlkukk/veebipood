@@ -21,6 +21,14 @@ h1 {
   color: rgb(223, 43, 43);
 }
 
+.taust-roosa {
+  background-color: rgb(255, 118, 118);
+}
+
+.taust-roosa2 {
+  background-color: rgb(255, 97, 97);
+}
+
 /* --- HEADER --- */
 
 header {
@@ -39,7 +47,16 @@ header {
     url("header.jpg");
   background-position: 50%;
   background-size: cover;
-  margin-bottom: 100px;
+  margin-bottom: 0;
+}
+
+.header-image h1 {
+  margin-top: 0;
+  padding: 40vh;
+  color: white;
+  font-size: 100px;
+  letter-spacing: 10px;
+  font-weight: normal;
 }
 
 /* --- SVG --- */
@@ -76,6 +93,7 @@ ul {
   padding-left: 0;
   margin: 0 auto;
   font-size: 25px;
+  font-weight: normal;
 }
 
 ul li {
@@ -99,6 +117,137 @@ nav a:hover,
   height: 50px;
   width: 50px;
 }
+
+/* --- INDEX --- */
+
+/* --- TUTVUSTUS --- */
+
+.h1-tutvustus {
+  color: white;
+  text-align: left;
+  padding-top: 100px;
+  margin-top: 0px;
+  font-size: 60px;
+  padding-bottom: 50px;
+}
+
+.p-tutvustus {
+  color: white;
+  font-size: 40px;
+  padding-bottom: 50px;
+  margin-bottom: 0px;
+}
+
+.vahe-pilt1,
+.vahe-pilt2 {
+  height: 35vh;
+  background-size: cover;
+  margin-bottom: 0;
+}
+
+.vahe-pilt1 {
+  background: linear-gradient(
+      rgba(255, 0, 43, 0.1) 60%,
+      rgba(255, 100, 100, 0.4)
+    ),
+    url("amplifier.jpg");
+  background-position: 60%;
+}
+
+.vahe-pilt2 {
+  background: linear-gradient(
+      rgba(255, 0, 43, 0.1) 60%,
+      rgba(255, 100, 100, 0.4)
+    ),
+    url("guitar-3943201_1920.jpg");
+  background-position: 60%;
+}
+
+/* --- KONTAKT --- */
+
+.contact-info {
+  display: flex;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.contact-info__left,
+.contact-info__right {
+  width: 50%;
+}
+
+.contact-info__left {
+  font-size: 40px;
+  color: white;
+}
+
+.contact-info__left table {
+  margin: 0 auto;
+  line-height: 250%;
+}
+
+.contact-info__left table tr td:first-child {
+  font-weight: bold;
+  text-align: right;
+  padding-right: 10px;
+}
+
+/* --- FORM --- */
+
+input[type="text"],
+input[type="email"],
+input[type="tel"] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type="radio"] {
+  margin: 20px 20px;
+}
+
+.radio-label {
+  display: block;
+}
+
+.checkbox-label {
+  font-size: 20px;
+}
+
+.radio-label label {
+  font-size: 20px;
+}
+
+form {
+  display: block;
+  margin-top: 50px;
+}
+
+label {
+  font-size: 25px;
+}
+
+input[type="submit"] {
+  width: 100%;
+  background-color: rgb(255, 118, 118);
+  color: white;
+  padding: 14px 20px;
+  margin: 50px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 25px;
+  transition: 0.2s;
+}
+
+input[type="submit"]:hover {
+  background-color: rgb(223, 43, 43);
+}
+
 /* --- FOOTER --- */
 
 footer {
@@ -114,4 +263,5 @@ footer {
 
 footer p {
   padding-top: 3vh;
+  margin-top: 0px;
 }
