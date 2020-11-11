@@ -163,6 +163,40 @@ nav a:hover,
   background-position: 60%;
 }
 
+/* --- UUDISED --- */
+
+.uudised-left,
+.uudised-right {
+  width: 50%;
+}
+
+.uudised {
+  display: flex;
+}
+
+.h1-uudised {
+  color: white;
+  font-size: 60px;
+  text-align: left;
+}
+
+.p-uudised {
+  color: white;
+  font-size: 30px;
+  margin-bottom: 5px;
+}
+
+.a-uudised {
+  text-decoration: none;
+  color: rgb(255, 197, 197);
+  font-size: 25px;
+  transition: 0.2s;
+}
+
+.a-uudised:hover {
+  color: rgb(255, 255, 255);
+}
+
 /* --- KONTAKT --- */
 
 .contact-info {
@@ -256,12 +290,26 @@ footer {
     rgba(221, 221, 221, 0.4)
   );
   height: 10vh;
-  text-align: center;
   font-size: 20px;
   color: rgb(134, 134, 134);
+  display: flex;
+}
+
+.footer-left {
+  width: 20%;
+}
+
+.footer-right {
+  width: 80%;
 }
 
 footer p {
-  padding-top: 3vh;
+  padding-top: 3.5vh;
   margin-top: 0px;
+}
+
+.social {
+  height: 50px;
+  margin-left: 25px;
+  margin-top: 25px;
 }
