@@ -1,0 +1,523 @@
+/* --- GLOBAL --- */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Lato", sans-serif;
+}
+
+.container {
+  margin: 0 auto;
+  width: 1200px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 40px;
+  letter-spacing: 2px;
+  color: rgb(223, 43, 43);
+}
+
+.taust-roosa {
+  background-color: rgb(255, 118, 118);
+}
+
+.taust-roosa2 {
+  background-color: rgb(255, 97, 97);
+}
+
+.back {
+  text-decoration: none;
+  color:  rgb(255, 118, 118);
+  font-size: 20px;
+  display: block;
+  margin-top: 25px;
+  transition: 0.2s;
+}
+
+.back:hover {
+  color: rgb(255, 97, 97);
+}
+
+/* --- HEADER --- */
+
+header {
+  background: linear-gradient(
+    rgba(189, 189, 189, 0.1) 20%,
+    rgba(221, 221, 221, 0.4)
+  );
+}
+
+.header-image {
+  height: 70vh;
+  background: linear-gradient(
+      rgba(255, 0, 43, 0.1) 60%,
+      rgba(255, 100, 100, 0.4)
+    ),
+    url("header.jpg");
+  background-position: 50%;
+  background-size: cover;
+  margin-bottom: 0;
+}
+
+.header-image h1 {
+  margin-top: 0;
+  padding: 40vh;
+  color: white;
+  font-size: 100px;
+  letter-spacing: 10px;
+  font-weight: normal;
+}
+
+/* --- SVG --- */
+
+svg {
+  height: 100px;
+  width: 100px;
+  transform: rotate(45deg);
+}
+
+/* --- NAV --- */
+
+.header-container__right {
+  margin-top: 5vh;
+  width: 90%;
+}
+
+.header-container__left {
+  margin-top: 2.5vh;
+  width: 10%;
+}
+
+.header-container {
+  width: 85%;
+  display: flex;
+  margin-left: 7.5%;
+  height: 15vh;
+}
+
+.nav-ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  padding-left: 0;
+  margin: 0 auto;
+  font-size: 25px;
+  font-weight: normal;
+}
+
+ul li {
+  padding: 10px 0;
+  letter-spacing: 2px;
+}
+
+nav a {
+  text-decoration: none;
+  color: rgb(255, 118, 118);
+  font-weight: bold;
+  transition: color 200ms;
+}
+
+nav a:hover,
+.active {
+  color: rgb(223, 43, 43);
+}
+
+.cart {
+  height: 50px;
+  width: 50px;
+}
+
+/* --- INDEX --- */
+
+/* --- TUTVUSTUS --- */
+
+.h1-tutvustus {
+  color: white;
+  text-align: left;
+  padding-top: 100px;
+  margin-top: 0px;
+  font-size: 60px;
+  padding-bottom: 50px;
+}
+
+.p-tutvustus {
+  color: white;
+  font-size: 40px;
+  padding-bottom: 50px;
+  margin-bottom: 0px;
+}
+
+.vahe-pilt1,
+.vahe-pilt2 {
+  height: 35vh;
+  background-size: cover;
+  margin-bottom: 0;
+}
+
+.vahe-pilt1 {
+  background: linear-gradient(
+      rgba(255, 0, 43, 0.1) 60%,
+      rgba(255, 100, 100, 0.4)
+    ),
+    url("amplifier.jpg");
+  background-position: 60%;
+}
+
+.vahe-pilt2 {
+  background: linear-gradient(
+      rgba(255, 0, 43, 0.1) 60%,
+      rgba(255, 100, 100, 0.4)
+    ),
+    url("guitar-3943201_1920.jpg");
+  background-position: 60%;
+}
+
+/* --- UUDISED --- */
+
+.uudised-left,
+.uudised-right {
+  width: 50%;
+}
+
+.uudised {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.uudised img {
+  object-fit: cover;
+  width: 100%;
+}
+
+.h1-uudised {
+  color: white;
+  font-size: 60px;
+  text-align: left;
+}
+
+.p-uudised {
+  color: white;
+  font-size: 30px;
+  margin-bottom: 5px;
+}
+
+.a-uudised {
+  text-decoration: none;
+  color: rgb(255, 197, 197);
+  font-size: 25px;
+  transition: 0.2s;
+}
+
+.a-uudised:hover {
+  color: rgb(255, 255, 255);
+}
+
+.img-wrapper {
+  flex-basis: 28%;
+  margin: 50px 50px;
+}
+
+.kuupaev {
+  color: rgb(233, 233, 233);
+}
+
+/* --- TOOTED --- */
+
+.tooted-content {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.tooted,
+.image-wrapper {
+  flex-basis: 28%;
+  margin-left: 4%;
+  margin-bottom: 4%;
+}
+
+.tooted img {
+  object-fit: cover;
+  width: 100%;
+}
+
+.image-wrapper {
+  border: 1px solid rgb(206, 206, 206);
+  border-radius: 10px;
+  padding: 10px 10px;
+  transition: 0.2s;
+}
+
+.image-wrapper a {
+  text-decoration: none;
+  color: black;
+}
+
+.image-wrapper h2 {
+  color: rgb(71, 1, 1);
+  text-align: center;
+}
+
+select {
+  padding: 5px 10px;
+  border: 1px solid rgb(206, 206, 206);
+  border-radius: 10px;
+  margin-bottom: 25px;
+  margin-left: 42%;
+}
+
+.image-wrapper:hover {
+  box-shadow: 0px 0px 5px 5px rgb(206, 206, 206);
+}
+
+hr {
+  border: 0.1px solid rgb(206, 206, 206);
+}
+
+/* --- TOODE --- */
+
+.toode-left,
+.toode-right {
+  width: 50%;
+}
+
+.toode {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 185px;
+}
+
+.toode img {
+  object-fit: cover;
+  width: 100%;
+}
+
+.toode-ul {
+  list-style: circle;
+}
+
+.toode-right{
+  padding-top: 50px;
+}
+
+.btn-toode {
+  background-color: rgb(255, 118, 118);
+  border: none;
+  border-radius: 10px;
+  padding: 10px 20px;
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+  transition: 0.2s;
+}
+
+.btn-toode:hover {
+  cursor: pointer;
+  background-color:  rgb(255, 97, 97);
+  padding: 15px 25px;
+}
+
+/* --- OSTUKORV --- */
+.ostukorv {
+  display: flex;
+  margin-top: 50px;
+  margin-bottom: 28.5%;
+}
+
+.ostukorv-left, 
+.ostukorv-right {
+  width: 50%;
+}
+
+.ostukorv-item {
+  padding-left: 10px;
+  border: 1px solid rgb(206, 206, 206);
+  border-radius: 10px;
+  transition: 0.2s;
+  margin-bottom: 5px;
+}
+
+.ostukorv-hind {
+  text-align: right;
+  padding-right: 10px;
+}
+
+.ostukorv-item:hover {
+  box-shadow: 0px 0px 2px 2px rgb(206, 206, 206);
+}
+
+.btn-ostukorv {
+  background-color: rgb(255, 118, 118);
+  border: none;
+  border-radius: 10px;
+  padding: 5px 10px;
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+  transition: 0.2s;
+  margin-bottom: 5px;
+}
+
+.btn-ostukorv:hover,
+.btn-maksma:hover {
+  cursor: pointer;
+  background-color:  rgb(255, 97, 97);
+}
+
+.ostukorv h3,
+.ostukorv label,
+.ostukorv input[type="email"] {
+  margin-left: 25px;
+}
+
+.btn-maksma {
+  width: 25%;
+  background-color: rgb(255, 118, 118);
+  color: white;
+  padding: 5px 20px;
+  margin: 50px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 25px;
+  transition: 0.2s;
+  margin-left: 25px;
+}
+
+/* --- SUCCESS --- */
+
+.success {
+  text-align: center;
+  margin-top: 25%;
+  margin-bottom: 29.5%;
+}
+
+.success a {
+  text-decoration: none;
+  color: rgb(255, 118, 118);
+  font-size: 20px;
+}
+
+.success a:hover {
+  color:  rgb(255, 97, 97);
+}
+
+/* --- KONTAKT --- */
+
+.contact-info {
+  display: flex;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.contact-info__left,
+.contact-info__right {
+  width: 50%;
+}
+
+.contact-info__left {
+  font-size: 40px;
+  color: white;
+}
+
+.contact-info__left table {
+  margin: 0 auto;
+  line-height: 250%;
+}
+
+.contact-info__left table tr td:first-child {
+  font-weight: bold;
+  text-align: right;
+  padding-right: 10px;
+}
+
+/* --- FORM --- */
+
+input[type="text"],
+input[type="email"],
+input[type="tel"] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type="radio"] {
+  margin: 20px 20px;
+}
+
+.radio-label {
+  display: block;
+}
+
+.checkbox-label {
+  font-size: 20px;
+}
+
+.radio-label label {
+  font-size: 20px;
+}
+
+form {
+  display: block;
+  margin-top: 50px;
+}
+
+label {
+  font-size: 25px;
+}
+
+input[type="submit"] {
+  width: 100%;
+  background-color: rgb(255, 118, 118);
+  color: white;
+  padding: 14px 20px;
+  margin: 50px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 25px;
+  transition: 0.2s;
+}
+
+input[type="submit"]:hover {
+  background-color: rgb(255, 97, 97);
+}
+
+/* --- FOOTER --- */
+
+footer {
+  background: linear-gradient(
+    rgba(189, 189, 189, 0.1) 20%,
+    rgba(221, 221, 221, 0.4)
+  );
+  height: 10vh;
+  font-size: 20px;
+  color: rgb(134, 134, 134);
+  display: flex;
+}
+
+.footer-left {
+  width: 20%;
+}
+
+.footer-right {
+  width: 80%;
+}
+
+footer p {
+  padding-top: 3.5vh;
+  margin-top: 0px;
+}
+
+.social {
+  height: 50px;
+  margin-left: 25px;
+  margin-top: 25px;
+}
